@@ -1,0 +1,22 @@
+[MESSAGES CONTROL]
+disable=
+    broad-except,
+    deprecated-lambda,
+    fixme,
+    import-error,
+    invalid-name,
+    line-too-long,
+    missing-docstring, # Temporarily disabled until we fixed it
+    no-init,
+    no-self-use,
+    old-style-class,
+    too-few-public-methods,
+    too-many-public-methods,
+    too-many-arguments,
+    too-many-branches,
+    too-many-instance-attributes,
+    too-many-locals,
+    too-many-statements,
+    unnecessary-lambda,
+    unused-argument,
+    wrong-import-order,
