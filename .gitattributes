@@ -1,0 +1,7 @@
+.github/
+.gitattributes
+.gitignore
+.pylintrc
+Makefile
+requirements.txt
+tox.ini

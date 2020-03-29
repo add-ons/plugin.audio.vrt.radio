@@ -1,2 +1,2 @@
 pylint
-tox-travis
+tox
