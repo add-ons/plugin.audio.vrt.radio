@@ -21,14 +21,14 @@ Met deze addon kan je alle VRT Radio streams beluisteren.
 </description>
         <language>nl</language>
         <platform>all</platform>
-        <license>GNU General Public License, v3</license>
+        <license>GPL-3.0-only</license>
         <news>
 v0.1.0 (2019-05-01)
 - First release
         </news>
-        <source>https://github.com/dagwieers/plugin.audio.vrt.radio</source>
-        <website>https://github.com/dagwieers/plugin.audio.vrt.radio/wiki</website>
-        <forum>https://github.com/dagwieers/plugin.audio.vrt.radio/issues</forum>
+        <source>https://github.com/add-ons/plugin.audio.vrt.radio</source>
+        <website>https://github.com/add-ons/plugin.audio.vrt.radio/wiki</website>
+        <forum>https://github.com/add-ons/plugin.audio.vrt.radio/issues</forum>
         <assets>
             <icon>resources/media/icon.png</icon>
             <fanart>resources/media/fanart.jpg</fanart>
