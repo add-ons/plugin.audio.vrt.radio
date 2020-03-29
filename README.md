@@ -1,6 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/add-ons/plugin.audio.vrt.radio.svg)](https://github.com/add-ons/plugin.audio.vrt.radio/releases)
 [!![CI](https://github.com/add-ons/plugin.audio.vrt.radio/workflows/CI/badge.svg)](https://github.com/add-ons/plugin.audio.vrt.radio/actions?query=workflow:CI)
-[![Build Status](https://travis-ci.org/add-ons/plugin.audio.vrt.radio.svg?branch=master)](https://travis-ci.org/add-ons/plugin.audio.vrt.radio)
 [![License: GPLv3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://opensource.org/licenses/GPLv3)
 [![Contributors](https://img.shields.io/github/contributors/add-ons/plugin.audio.vrt.radio.svg)](https://github.com/add-ons/plugin.audio.vrt.radio/graphs/contributors)
 
