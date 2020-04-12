@@ -42,7 +42,7 @@ check-addon: clean
 	kodi-addon-checker . --branch=krypton
 	kodi-addon-checker . --branch=leia
 
-build: test
+build: clean test
 	@echo -e "$(white)=$(blue) Building new package$(reset)"
 	@rm -f ../$(zip_name)
 	cd ..; zip -r $(zip_name) $(include_paths) -x $(exclude_files)

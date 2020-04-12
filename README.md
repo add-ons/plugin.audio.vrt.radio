@@ -17,5 +17,11 @@ You can report issues at [our GitHub project](https://github.com/add-ons/plugin.
 
 ## Releases
 
+#### v0.1.1 (2020-04-12)
+- Added channel Radio 1 Classics
+- Added channel StuBru #ikluisterbelgisch
+- Added channel MNM Back to the 90's & 00's
+- Removed channel Sporza
+
 #### v0.1.0 (2019-05-01)
 - Initial working release

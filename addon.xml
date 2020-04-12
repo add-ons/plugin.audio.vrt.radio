@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.vrt.radio" name="VRT Radio" version="0.1.0" provider-name="dagwieers">
+<addon id="plugin.audio.vrt.radio" name="VRT Radio" version="0.1.1" provider-name="dagwieers">
     <requires>
         <!-- import addon="resource.images.studios.coloured" version="0.0.15"/ -->
         <import addon="resource.images.studios.white" version="0.0.21"/>
@@ -23,6 +23,12 @@ Met deze addon kan je alle VRT Radio streams beluisteren.
         <platform>all</platform>
         <license>GPL-3.0-only</license>
         <news>
+v0.1.1 (2020-04-12)
+- Added channel Radio 1 Classics
+- Added channel StuBru #ikluisterbelgisch
+- Added channel MNM Back to the 90's &amp; 00's
+- Removed channel Sporza
+
 v0.1.0 (2019-05-01)
 - First release
         </news>
