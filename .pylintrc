@@ -4,6 +4,7 @@ disable=
     deprecated-lambda,
     fixme,
     import-error,
+    import-outside-toplevel,  # Done on purpose to reduce overhead at startup
     invalid-name,
     line-too-long,
     missing-docstring, # Temporarily disabled until we fixed it
@@ -11,11 +12,12 @@ disable=
     no-self-use,
     old-style-class,
     too-few-public-methods,
-    too-many-public-methods,
     too-many-arguments,
     too-many-branches,
+    too-many-function-args,
     too-many-instance-attributes,
     too-many-locals,
+    too-many-public-methods,
     too-many-statements,
     unnecessary-lambda,
     unused-argument,

@@ -6,7 +6,7 @@
 
 from __future__ import absolute_import, division, unicode_literals
 
-from channels import CHANNELS
+from data import CHANNELS
 import routing
 from xbmc import getCondVisibility
 from xbmcgui import ListItem
@@ -65,6 +65,14 @@ def play(name):
     channel = next((channel for channel in CHANNELS if channel['name'] == name), None)
     stream = channel.get('mp3_128')
     setResolvedUrl(plugin.handle, True, listitem=ListItem(path=stream))
+
+
+@plugin.route('/iptv/channels')
+def iptv_channels():
+    """Return JSON-M3U formatted data for all live channels"""
+    from iptvmanager import IPTVManager
+    port = int(plugin.args.get('port')[0])
+    IPTVManager(port).send_channels()
 
 
 if __name__ == '__main__':
