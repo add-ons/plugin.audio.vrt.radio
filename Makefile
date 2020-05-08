@@ -1,3 +1,4 @@
+export PYTHONPATH := $(CURDIR)/resources/lib/
 PYTHON := python
 
 name = $(shell xmllint --xpath 'string(/addon/@id)' addon.xml)
@@ -6,9 +7,9 @@ git_branch = $(shell git rev-parse --abbrev-ref HEAD)
 git_hash = $(shell git rev-parse --short HEAD)
 
 zip_name = $(name)-$(version)-$(git_branch)-$(git_hash).zip
-include_files = addon.py addon.xml channels.m3u8 data.py iptvmanager.py LICENSE README.md resources/ vrt.m3u8
+include_files = addon.xml channels.m3u8 LICENSE README.md resources/
 include_paths = $(patsubst %,$(name)/%,$(include_files))
-exclude_files = \*.new \*.orig \*.pyc
+exclude_files = \*.new \*.orig \*.pyc \*.pyo
 zip_dir = $(name)/
 
 languages = $(filter-out en_gb, $(patsubst resources/language/resource.language.%, %, $(wildcard resources/language/*)))
@@ -29,7 +30,7 @@ check-tox:
 
 check-pylint:
 	@echo -e "$(white)=$(blue) Starting sanity pylint test$(reset)"
-	$(PYTHON) -m pylint *.py
+	$(PYTHON) -m pylint resources/lib/
 
 check-translations:
 	@echo -e "$(white)=$(blue) Starting language test$(reset)"
@@ -42,7 +43,7 @@ check-addon: clean
 	kodi-addon-checker . --branch=krypton
 	kodi-addon-checker . --branch=leia
 
-build: clean test
+build: clean
 	@echo -e "$(white)=$(blue) Building new package$(reset)"
 	@rm -f ../$(zip_name)
 	cd ..; zip -r $(zip_name) $(include_paths) -x $(exclude_files)

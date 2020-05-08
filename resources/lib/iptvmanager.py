@@ -40,8 +40,9 @@ class IPTVManager:
             streams.append(dict(
                 id='{name}.be'.format(**channel),
                 name=channel.get('label'),
-                logo=channel.get('epg_logo'),
+                logo=channel.get('logo'),
                 stream=channel.get('mp3_128'),
+                preset=channel.get('preset'),
                 radio=True,
             ))
         return dict(version=1, streams=streams)

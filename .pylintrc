@@ -2,12 +2,13 @@
 disable=
     broad-except,
     deprecated-lambda,
-    fixme,
+    fixme,  # Allow FIXMEs in code is a useful practice
     import-error,
     import-outside-toplevel,  # Done on purpose to reduce overhead at startup
+    import-outside-toplevel,  # Done on purpose to reduce overhead at startup
     invalid-name,
-    line-too-long,
-    missing-docstring, # Temporarily disabled until we fixed it
+    line-too-long,  # Flake8 is used for testing line-length
+    missing-docstring, # Temporarily disabled until we fix it
     no-init,
     no-self-use,
     old-style-class,

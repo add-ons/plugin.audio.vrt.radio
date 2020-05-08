@@ -7,21 +7,20 @@
         <import addon="xbmc.python" version="2.25.0"/>
     </requires>
 
-    <extension point="xbmc.python.pluginsource" library="addon.py">
+    <extension point="xbmc.python.pluginsource" library="resources/lib/addon_entry.py">
         <provides>audio</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Listen to VRT Radio streams</summary>
-        <description lang="en_GB">
-With this addon you can browse and liste the VRT Radio streams.
-</description>
+        <description lang="en_GB">With this addon you can browse and liste the VRT Radio streams.</description>
         <summary lang="nl_NL">Luister naar VRT Radio streams</summary>
-        <description lang="nl_NL">
-Met deze addon kan je alle VRT Radio streams beluisteren.
-</description>
-        <language>nl</language>
+        <description lang="nl_NL">Met deze addon kan je alle VRT Radio streams beluisteren.</description>
+        <language>en nl</language>
         <platform>all</platform>
         <license>GPL-3.0-only</license>
+        <website>https://github.com/add-ons/plugin.audio.vrt.radio/wiki</website>
+        <source>https://github.com/add-ons/plugin.audio.vrt.radio</source>
+        <forum>https://github.com/add-ons/plugin.audio.vrt.radio/issues</forum>
         <news>
 v0.1.1 (2020-04-12)
 - Added channel Radio 1 Classics
@@ -32,12 +31,10 @@ v0.1.1 (2020-04-12)
 v0.1.0 (2019-05-01)
 - First release
         </news>
-        <source>https://github.com/add-ons/plugin.audio.vrt.radio</source>
-        <website>https://github.com/add-ons/plugin.audio.vrt.radio/wiki</website>
-        <forum>https://github.com/add-ons/plugin.audio.vrt.radio/issues</forum>
         <assets>
             <icon>resources/media/icon.png</icon>
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
 </addon>

@@ -5,18 +5,19 @@
 ''' This is the actual VRT Radio audio plugin entry point '''
 
 from __future__ import absolute_import, division, unicode_literals
-
-from data import CHANNELS
 import routing
+from data import CHANNELS
+
 from xbmc import getCondVisibility
 from xbmcgui import ListItem
 from xbmcplugin import addDirectoryItems, addSortMethod, endOfDirectory, setResolvedUrl, SORT_METHOD_LABEL, SORT_METHOD_UNSORTED
 
-plugin = routing.Plugin()
+plugin = routing.Plugin()  # pylint: disable=invalid-name
 
 
 @plugin.route('/')
 def main_menu(path=''):
+    """The VRT Radio plugin main menu"""
 
     has_white_icons = getCondVisibility('System.HasAddon("resource.images.studios.white")') == 1
     if has_white_icons:
@@ -45,7 +46,7 @@ def main_menu(path=''):
             thumbnailImage=thumb,
             path=url,
         )
-        item.setArt(dict(thumb=thumb, icon=icon, fanart=icon))
+        item.setArt(dict(thumb=channel.get('logo'), icon=icon, fanart=icon))
         item.setInfo(type='video', infoLabels=dict(
             mediatype='music',
             plot='[B]%(label)s[/B]\n[I]%(tagline)s[/I]\n\n[COLOR yellow]%(website)s[/COLOR]' % channel,
@@ -75,5 +76,6 @@ def iptv_channels():
     IPTVManager(port).send_channels()
 
 
-if __name__ == '__main__':
-    plugin.run()
+def run(argv):
+    ''' Addon entry point from wrapper '''
+    plugin.run(argv)
