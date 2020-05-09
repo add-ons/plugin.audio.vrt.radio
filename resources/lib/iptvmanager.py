@@ -46,3 +46,10 @@ class IPTVManager:
                 radio=True,
             ))
         return dict(version=1, streams=streams)
+
+    @via_socket
+    def send_epg():  # pylint: disable=no-method-argument
+        """Return JSONTV formatted information to IPTV Manager"""
+        from schedule import Schedule
+        epg_data = Schedule().get_epg_data()
+        return dict(version=1, epg=epg_data)

@@ -76,6 +76,14 @@ def iptv_channels():
     IPTVManager(port).send_channels()
 
 
+@plugin.route('/iptv/epg')
+def iptv_epg():
+    """Return JSON-M3U formatted data for all live channels"""
+    from iptvmanager import IPTVManager
+    port = int(plugin.args.get('port')[0])
+    IPTVManager(port).send_epg()
+
+
 def run(argv):
     ''' Addon entry point from wrapper '''
     plugin.run(argv)
