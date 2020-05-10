@@ -3,7 +3,6 @@
     <requires>
         <!-- import addon="resource.images.studios.coloured" version="0.0.15"/ -->
         <import addon="resource.images.studios.white" version="0.0.21"/>
-        <import addon="script.module.dateutil" version="2.8.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
         <import addon="xbmc.python" version="2.25.0"/>
     </requires>
