@@ -37,7 +37,7 @@ def main_menu(path=''):
         icon = icon_path % channel
         thumb = thumb_path % channel
         # url = plugin.url_for(play, name=channel.get('name'))
-        url = channel.get('mp3_128')
+        url = channel.get('aac_128')
 
         item = ListItem(
             label=channel.get('label'),
