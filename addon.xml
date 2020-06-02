@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.vrt.radio" name="VRT Radio" version="0.1.1" provider-name="dagwieers">
+<addon id="plugin.audio.vrt.radio" name="VRT Radio" version="0.1.2" provider-name="dagwieers">
     <requires>
         <!-- import addon="resource.images.studios.coloured" version="0.0.15"/ -->
         <import addon="resource.images.studios.white" version="0.0.21"/>
@@ -22,6 +22,13 @@
         <source>https://github.com/add-ons/plugin.audio.vrt.radio</source>
         <forum>https://github.com/add-ons/plugin.audio.vrt.radio/issues</forum>
         <news>
+v0.1.2 (2020-06-02)
+- Switch from MP3 to AAC by default
+- Added channel Radio 2 Bene Bene
+- Added channel StuBru Hooray
+- Added channel StuBru Bruut
+- Added support for IPTV Manager
+
 v0.1.1 (2020-04-12)
 - Added channel Radio 1 Classics
 - Added channel StuBru #ikluisterbelgisch
