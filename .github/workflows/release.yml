@@ -66,7 +66,7 @@ jobs:
         id: kodi-addon-submitter
         uses: xbmc/action-kodi-addon-submitter@v1.2
         with:
-          kodi-repository: repo-scripts
+          kodi-repository: repo-plugins
           addon-id: plugin.audio.vrt.radio
           kodi-version: leia
           kodi-matrix: true
