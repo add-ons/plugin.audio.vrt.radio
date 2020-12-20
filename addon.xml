@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.audio.vrt.radio" name="VRT Radio" version="0.1.3" provider-name="dagwieers">
     <requires>
-        <!-- import addon="resource.images.studios.coloured" version="0.0.15"/ -->
-        <import addon="resource.images.studios.white" version="0.0.21"/>
         <import addon="script.module.routing" version="0.2.0"/>
         <import addon="xbmc.python" version="2.25.0"/>
     </requires>
